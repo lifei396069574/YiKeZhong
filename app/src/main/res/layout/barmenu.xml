@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <com.michaldrabik.tapbarmenulib.TapBarMenu
+        android:layout_margin="10dp"
+        android:id="@+id/tapBarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="24dp"
+        app:tbm_buttonPosition="right"
+        >
+
+        <ImageView
+            android:id="@+id/item1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/btn_home_fenlei_more_normal"
+            />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            android:id="@+id/item2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/btn_login_bg_normal"
+            />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            android:id="@+id/item3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/btn_login_bg_normal"
+            />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            android:id="@+id/item4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/btn_login_bg_normal"
+            />
+
+    </com.michaldrabik.tapbarmenulib.TapBarMenu>
+
+</RelativeLayout>

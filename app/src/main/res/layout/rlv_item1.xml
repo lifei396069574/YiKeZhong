@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_margin="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/sdv_rlv_item1"
+            fresco:roundAsCircle="true"
+            fresco:placeholderImage="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/tv_item1_user"
+            android:layout_toRightOf="@id/sdv_rlv_item1"
+            android:layout_alignTop="@id/sdv_rlv_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天天喝牛奶"
+            android:textSize="20sp"
+            android:textColor="@color/red"
+            />
+
+        <TextView
+            android:id="@+id/tv_item1_time"
+            android:layout_toRightOf="@id/sdv_rlv_item1"
+            android:layout_alignBottom="@id/sdv_rlv_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-11"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <include layout="@layout/barmenu"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_item1_pro"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="适合交友"
+        android:textColor="@color/black"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="350dp"
+            android:layout_height="240dp"
+            android:id="@+id/sdv_rlv_item12"
+            fresco:placeholderImage="@mipmap/ic_launcher"
+            />
+
+        <include layout="@layout/barmenu2"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_rlc_p11"
+            android:textSize="20sp"
+            android:text="骑猪上高速 :"
+            android:textColor="@color/blue"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_rlc_p12"
+            android:textSize="20sp"
+            android:text="厉害了我的哥"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_rlc_p21"
+            android:textSize="20sp"
+            android:text="骑猪上高速 :"
+            android:textColor="@color/blue"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_rlc_p22"
+            android:textSize="20sp"
+            android:text="厉害了我的哥"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

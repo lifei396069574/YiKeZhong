@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/rb_item_1"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="1231"
+            android:drawableTop="@drawable/btn_share_selector"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rb_item_2"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="1231"
+            android:drawableTop="@drawable/btn_share"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rb_item_3"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="1231"
+            android:drawableTop="@drawable/btn_share_selector"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rb_item_4"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="1231"
+            android:drawableTop="@drawable/btn_input_selector"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
