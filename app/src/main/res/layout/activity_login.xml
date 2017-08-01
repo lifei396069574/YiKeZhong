@@ -42,17 +42,19 @@
     android:paddingTop="16dp"
     android:paddingRight="20dp"
     android:paddingBottom="10dp"/>
+
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingRight="20dp"
-        android:paddingBottom="10dp"
-        android:maxLines="1"
+        android:background="@null"
         android:maxLength="20"
-        android:background="@null"/>
+        android:maxLines="1"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"/>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="0.5dp"

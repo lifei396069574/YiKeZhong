@@ -34,4 +34,11 @@
     <string name="et_pass">请输入密码</string>
     <string name="et_name">请输入用户名</string>
     <string name="et_head">请输入userHead</string>
+    <!--  发表 -->
+    <string name="cancel">取消</string>
+    <string name="publishArticle">发表文章</string>
+    <string name="publish">发表</string>
+    <string name="at">"@Ta"</string>
+
+
 </resources>

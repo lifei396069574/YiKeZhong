@@ -222,7 +222,8 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainVie
             switch (menuItem.getItemId()) {
                 case R.id.action_share:
                     ToastUtils.showToast(mContext, "点击了action_share");
-                    // TODO: 2017/7/21  发表页面 
+                    // TODO: 2017/7/21  发表页面
+                    startActivity(UpLoadActivity.class);
                     break;
             }
 

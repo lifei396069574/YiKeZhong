@@ -7,7 +7,6 @@ import com.google.gson.GsonBuilder;
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import com.mvp.app.Constant;
 import com.mvp.app.MyApplication;
-import com.mvp.base.BaseBean;
 import com.mvp.model.utils.NetUtils;
 
 import java.io.File;
@@ -118,10 +117,12 @@ public class Api {
         return RetrofitInstance.apiserver;
     }
 
-    public static <T> void loadDataFromNet(Observable<BaseBean<T>> observable, HttpObserver<BaseBean<T>> httpObserver) {
+    public static <T> void loadDataFromNet(Observable<T> observable, HttpObserver<T> httpObserver) {
                  observable
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(httpObserver);
     }
+
+
 }

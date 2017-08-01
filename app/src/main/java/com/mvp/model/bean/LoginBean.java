@@ -7,20 +7,21 @@ package com.mvp.model.bean;
 
 public class LoginBean {
 
+
     /**
-     * error_code : 200
-     * user : {"userHead":"emmm","userId":6,"userName":"唐清如","userPassword":"111","userPhone":"13011196165","userSex":"女"}
+     * code : 200
+     * user : {"userId":93,"userName":"LF","userPassword":"123","userPhone":"18435161715","userSex":"男"}
      */
 
-    private String error_code;
+    private String code;
     private UserBean user;
 
-    public String getError_code() {
-        return error_code;
+    public String getCode() {
+        return code;
     }
 
-    public void setError_code(String error_code) {
-        this.error_code = error_code;
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public UserBean getUser() {
@@ -33,28 +34,18 @@ public class LoginBean {
 
     public static class UserBean {
         /**
-         * userHead : emmm
-         * userId : 6
-         * userName : 唐清如
-         * userPassword : 111
-         * userPhone : 13011196165
-         * userSex : 女
+         * userId : 93
+         * userName : LF
+         * userPassword : 123
+         * userPhone : 18435161715
+         * userSex : 男
          */
 
-        private String userHead;
         private int userId;
         private String userName;
         private String userPassword;
         private String userPhone;
         private String userSex;
-
-        public String getUserHead() {
-            return userHead;
-        }
-
-        public void setUserHead(String userHead) {
-            this.userHead = userHead;
-        }
 
         public int getUserId() {
             return userId;

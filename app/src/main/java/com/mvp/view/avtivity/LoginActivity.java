@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.mvp.R;
 import com.mvp.base.BaseActivity;
+import com.mvp.model.utils.LogUtils;
 import com.mvp.model.utils.ToastUtils;
 import com.mvp.presenter.LoginPresenter;
 import com.mvp.view.iview.LoginView;
@@ -53,12 +54,13 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
 
     @Override
     public void onSucceed(Object object) {
-
+        ToastUtils.showToast(this,"登陆成功");
     }
 
     @Override
     public void onFail(String str) {
         ToastUtils.showToast(this,str);
+        LogUtils.a(str);
     }
 
     @Override
@@ -106,8 +108,8 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
 
     public void getEtData(){
         mMap = new ArrayMap<>();
-        mMap.put("userPhone",mEtUsername.getText().toString());
         mMap.put("userPassword",mEtPassword.getText().toString());
+        mMap.put("userPhone",mEtUsername.getText().toString());
         mPresenter.login(mMap);
     }
 }

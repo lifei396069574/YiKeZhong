@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="天天喝牛奶"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="@color/red"
             />
 
@@ -49,7 +49,7 @@
         android:layout_marginLeft="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:text="适合交友"
         android:textColor="@color/black"
         />
@@ -62,12 +62,15 @@
 
         <com.facebook.drawee.view.SimpleDraweeView
             android:layout_width="350dp"
-            android:layout_height="240dp"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"
             android:id="@+id/sdv_rlv_item12"
             fresco:placeholderImage="@mipmap/ic_launcher"
             />
 
-        <include layout="@layout/barmenu2"/>
+        <include layout="@layout/barmenu2"
+
+            />
 
     </RelativeLayout>
 

@@ -36,16 +36,6 @@
         android:orientation="vertical"
         android:layout_margin="30dp"
         >
-       <android.support.design.widget.TextInputLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content">
-           <EditText
-               android:id="@+id/userHead"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:hint="@string/et_head"
-               />
-       </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -80,16 +70,28 @@
                 />
         </android.support.design.widget.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:id="@+id/userSex"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/sex"
-                />
-        </android.support.design.widget.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+               android:id="@+id/rb_reg_m"
+                android:text="男"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/rb_reg_w"
+                android:text="女"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
 
         <Button
             android:id="@+id/bt_regiest"

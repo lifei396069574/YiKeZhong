@@ -6,37 +6,38 @@
     <LinearLayout
         android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
         android:orientation="vertical"
         >
-        <RadioButton
+        <CheckBox
             android:id="@+id/rb_item_1"
             android:layout_margin="3dp"
             android:gravity="center"
             android:text="1231"
-            android:drawableTop="@drawable/btn_share_selector"
+            android:drawableTop="@drawable/btn_guanzhu_selector"
             android:button="@null"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <RadioButton
+            android:layout_height="wrap_content"
+            />
+        <CheckBox
             android:id="@+id/rb_item_2"
             android:layout_margin="3dp"
             android:gravity="center"
             android:text="1231"
-            android:drawableTop="@drawable/btn_share"
-            android:button="@null"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <RadioButton
-            android:id="@+id/rb_item_3"
-            android:layout_margin="3dp"
-            android:gravity="center"
-            android:text="1231"
             android:drawableTop="@drawable/btn_share_selector"
             android:button="@null"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <RadioButton
+        <CheckBox
+            android:id="@+id/rb_item_3"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="1231"
+            android:drawableTop="@drawable/btn_fenxiang_selector"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CheckBox
             android:id="@+id/rb_item_4"
             android:layout_margin="3dp"
             android:gravity="center"

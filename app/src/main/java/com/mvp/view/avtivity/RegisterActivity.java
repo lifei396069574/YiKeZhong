@@ -6,9 +6,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.TextView;
 
 import com.mvp.R;
 import com.mvp.base.BaseActivity;
+import com.mvp.model.utils.LogUtils;
 import com.mvp.model.utils.ToastUtils;
 import com.mvp.presenter.RegisterPresenter;
 import com.mvp.view.iview.RegisterView;
@@ -22,20 +25,23 @@ import butterknife.OnClick;
  */
 
 public class RegisterActivity extends BaseActivity<RegisterPresenter> implements RegisterView {
+
     @BindView(R.id.iv_Left)
     ImageView mIvLeft;
-    @BindView(R.id.userHead)
-    EditText mUserHead;
+    @BindView(R.id.tvTitle)
+    TextView mTvTitle;
     @BindView(R.id.userName)
     EditText mUserName;
     @BindView(R.id.userPassword)
     EditText mUserPassword;
     @BindView(R.id.userPhone)
     EditText mUserPhone;
-    @BindView(R.id.userSex)
-    EditText mUserSex;
     @BindView(R.id.bt_regiest)
-    Button mBtnRegiest;
+    Button mBtRegiest;
+    @BindView(R.id.rb_reg_m)
+    RadioButton mRbRegM;
+    @BindView(R.id.rb_reg_w)
+    RadioButton mRbRegW;
     private ArrayMap<String, String> mMap;
 
     @Override
@@ -45,13 +51,15 @@ public class RegisterActivity extends BaseActivity<RegisterPresenter> implements
 
     @Override
     public void onSucceed(Object object) {
-        ToastUtils.showToast(this,(String)object);
+        LogUtils.a(object);
+        ToastUtils.showToast(this, (String) object);
         finish();
     }
 
     @Override
     public void onFail(String str) {
-        ToastUtils.showToast(this,str);
+        ToastUtils.showToast(this, str);
+        LogUtils.a(str);
     }
 
     @Override
@@ -82,15 +90,21 @@ public class RegisterActivity extends BaseActivity<RegisterPresenter> implements
         }
     }
 
-    public void getEtData(){
+    public void getEtData() {
 
         mMap = new ArrayMap<>();
-        mMap.put("userHead",mUserHead.getText().toString());
-        mMap.put("userName",mUserName.getText().toString());
-        mMap.put("userPassword",mUserPassword.getText().toString());
-        mMap.put("userPhone",mUserPhone.getText().toString());
-        mMap.put("userSex",mUserSex.getText().toString());
+        mMap.put("userName", mUserName.getText().toString().trim());
+        mMap.put("userPassword", mUserPassword.getText().toString().trim());
+        mMap.put("userPhone", mUserPhone.getText().toString().trim());
+        if (mRbRegM.isChecked()){
+            mMap.put("userSex", "男");
+        }else {
+            mMap.put("userSex", "女");
+        }
 
         mPresenter.register(mMap);
     }
+
+
+
 }

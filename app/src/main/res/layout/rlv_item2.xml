@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="天天喝牛奶"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="@color/red"
             />
 
@@ -44,15 +44,27 @@
 
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/tv_item2_pro"
-        android:layout_marginLeft="20dp"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="xx"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        />
+        android:layout_margin="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_item2_pro"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xx"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <include layout="@layout/barmenu2"
+
+            />
+
+    </RelativeLayout>
 
 
 

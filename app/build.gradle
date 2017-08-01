@@ -67,5 +67,5 @@ dependencies {
     //banner
     compile 'com.bigkoo:convenientbanner:2.0.5'
     // 菜单
-    compile 'com.github.michaldrabik:tapbarmenu:1.0.5'
+
 }

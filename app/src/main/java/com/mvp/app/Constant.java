@@ -6,5 +6,5 @@ package com.mvp.app;
  */
 
 public class Constant {
-    public static final String BASE_URL = "http://169.254.234.3:8080/";
+    public static final String BASE_URL = "http://169.254.1.100/quarter/";
 }

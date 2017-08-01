@@ -40,7 +40,7 @@ public class BasePresenter<T extends BaseView> {
     public void isEmpty(Map<String ,String> map){
         for (Map.Entry<String, String> entry : map.entrySet()) {
             if (TextUtils.isEmpty(entry.getValue())){
-                mView.onFail(entry.getKey());
+                mView.onFail(entry.getKey()+"为空");
                 return;
             }
         }

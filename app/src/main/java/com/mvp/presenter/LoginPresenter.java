@@ -30,16 +30,16 @@ public class LoginPresenter extends BasePresenter<LoginView>{
                 .subscribe(new Consumer<LoginBean>() {
                     @Override
                     public void accept(LoginBean loginBean) throws Exception {
-                            if (loginBean.getError_code().equals(200)){
-                                    mView.onSucceed(loginBean.getUser());
-                            }else {
-                                mView.onFail("失败");
-                            }
+                           if (loginBean.getCode().equals("200")){
+                               mView.onSucceed(loginBean.getUser());
+                           }else {
+                               mView.onFail("失败");
+                           }
                     }
                 }, new Consumer<Throwable>() {
                     @Override
                     public void accept(Throwable throwable) throws Exception {
-                               mView.onFail(throwable.toString());
+                        mView.onFail(throwable.toString());
                     }
                 });
     }

@@ -19,7 +19,6 @@ import io.reactivex.schedulers.Schedulers;
 public class RegisterPresenter extends BasePresenter<RegisterView> {
 
     public void register(ArrayMap<String ,String> map){
-
         //判空
         isEmpty(map);
 
